@@ -42,7 +42,6 @@ function timeElapse(date){
 	if(isIOS()){
 		seconds += 8*60*60; //补偿ios系统的8小时时差
 	}
-	console.log(parseInt(seconds))
 	if(parseInt(seconds) == 31622400){
 		window.location.reload(true);
 	}
@@ -52,7 +51,7 @@ function timeElapse(date){
 		config.names[0] = "23岁";
 		config.lines = [
 	        "子卓",
-	        "花开一季，有落红为证",
+	        "22岁马上，有落红为证",
 	        "逝去的岁月，如何能托于烟尘",
 	        "你的浅笑，是我永生眷恋",
 	        "相思的真情，是否能明白一二",
@@ -84,4 +83,5 @@ function timeElapse(date){
 function isIOS(){
 	let u = navigator.userAgent;
 	let isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); 
+	return isIOS;
 }
