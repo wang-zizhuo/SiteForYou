@@ -39,9 +39,9 @@ $(window).resize(function() {
 
 function timeElapse(date){
 	var seconds = (+ new Date() - date.getTime()) / 1000;
-	if(isIOS()){
-		seconds += 8*60*60 + 2; //补偿ios系统的8小时时差，测试之后发现差了2秒，这里补上
-	}
+	//if(isIOS()){
+	//	seconds += 8*60*60 + 2; //补偿ios系统的8小时时差，测试之后发现差了2秒，这里补上
+	//}
 	if(parseInt(seconds) == 31622400){
 		window.location.reload(true);
 	}
